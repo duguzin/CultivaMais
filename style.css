@@ -357,7 +357,7 @@ body.open-menu .navbar-overlay-mobile {
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .img-produto-card {
@@ -749,7 +749,7 @@ div.swiper-button-next, div.swiper-button-prev {
 #swiper-pagination-slide {
     position: absolute;
     top: 350px;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* ESTILIZAÇÃO PARA O BOTÃO VOLTAR AO TOPO */
