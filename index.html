@@ -222,17 +222,29 @@
     
         </section>
 
-        <!-- <section class="section-item">
+        <section class="section-item">
+
+          <div class="swiper-card-img-item img-cardSwiper" style="--swiper-navigation-color: #fff; --swiper-pagination-color:  #004E29;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="swiper-card-img-item"></div>
+              <div class="swiper-slide" id="swiper-card-img-item"></div>
+              <div class="swiper-slide" id="swiper-card-img-item"></div>
+              <div class="swiper-slide" id="swiper-card-img-item"></div>
+              </div>
+          </div>
+              <div class="swiper-pagination-card"></div>
+          </div>
+
           <div class="container-img-text">
               <div class="container-imgs">
-                  <img class="img-item" src="https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0" alt="">
-                  
                 <div class="img-horizontal">
                   <img src="https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0" alt="">
                   <img src="https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0" alt="">
                   <img src="https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0" alt="">
                 </div>
+                  <img class="img-item" src="https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0" alt="">
               </div>
+    
               
               <div class="container-info-item">
                   <h1>Sacola 1kg de Trigo Natural</h1>
@@ -240,21 +252,19 @@
                   <h3>Quantidade</h3>
                   <div class="div-buttons-cart">
                     <button class="button-quantidade">- 1 +</button>
-                    <button class="button-adicionar-carrinho">Adicionar no Carrinho</button>
                     <button class="button-comprar">Comprar</button>
                   </div>
                   
                   <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sed, 
-                      quaerat et doloremque provident nulla, dicta minima possimus illo soluta quam alias, 
-                      explicabo dolore.
+                      quaerat et doloremque provident nulla.
                   </p>
               </div>
               
           </div>
 
         
-      </section> -->
+      </section>
       
         <section class="section-main">
         
@@ -344,6 +354,42 @@
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
   
         var swiper = new Swiper(".cardSwiper", {
+          autoplay: {
+          delay: 30000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination-card",
+      clickable: true,
+    },
+    breakpoints: {
+      1230: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    }
+  });
+  
+  window.addEventListener('resize', function () {
+    swiper.update(); // Atualiza o swiper quando a janela for redimensionada
+  });
+
+        var swiper = new Swiper(".swiper-card-img-item ", {
           autoplay: {
           delay: 30000,
           disableOnInteraction: false,

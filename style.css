@@ -348,6 +348,16 @@ body.open-menu .navbar-overlay-mobile {
     /* border: 1px solid #004E29; */
 }
 
+#swiper-card-img-item {
+    background-image: url(https://th.bing.com/th/id/R.8108f03836cd6f2930ea6831545b0813?rik=NVtN%2bsApSBhfww&pid=ImgRaw&r=0);
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 .img-produto-card {
     width: 100%;
     height: auto;
@@ -399,6 +409,11 @@ body.open-menu .navbar-overlay-mobile {
 
 .swiper-card {
     height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-card-img-item {
     width: 100%;
     overflow: hidden;
 }
@@ -470,21 +485,22 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .section-item {
-    padding: 1rem 8rem;
+    padding: 1rem 3rem;
 }
 
 .container-img-text {
     display: flex;
     /* align-items: center; */
-    gap: 2rem;
+    gap: 8rem;
 }
 
 .img-item {
-    width: 100%;
+    width: 400px;
     border-radius: 20px;
-    height: 320px;
+    height: 380px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     /* border: 1px solid #004E29; */
+    margin-left: 30px;
 }
 
 .div-buttons-cart {
@@ -492,17 +508,22 @@ div.swiper-button-next, div.swiper-button-prev {
     gap: 15px;
 }
 
+.container-info-item {
+    width: 300px;
+    padding: 1rem 0;
+}
+
 .container-info-item h1 {
     color: #004E29;
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
 .container-info-item h2 {
     color: #676767;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     margin-bottom: 25px;
     letter-spacing: 1px;
 }
@@ -566,13 +587,13 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .img-horizontal {
-    display: flex;
+  flex-direction: column;
 }
 
 .img-horizontal img {
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 20px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     /* border: 1px solid rgb(7, 26, 88); */
@@ -581,7 +602,8 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .container-imgs {
-    width: 100%;
+    width: 50%;
+    display: flex;
 }
 
 .img-horizontal img:hover {
@@ -668,11 +690,20 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 @media (min-width: 1010px) {
-    .div-input-cart-nav, .button-menu{
+    .div-input-cart-nav, .button-menu, .swiper-card-img-item {
         display: none;
     }
     
 } 
+
+@media screen and (max-width: 1200px) {
+    .section-main {
+        padding: 2rem;
+    }
+    .nav-main {
+        padding: 2rem 3rem;
+    }
+}
 
 @media screen and (max-width: 1010px) {
     .nav-main {
@@ -717,6 +748,22 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     #swiper-slide-text p {
         font-size: 12px;
+    }
+    .container-imgs {
+        display: none;
+    }
+    .container-info-item h2 {
+        font-size: 24px;
+    }
+    .section-item {
+        padding: 2rem 4rem;
+    }
+    .container-info-item {
+        padding: 0 4rem;
+        width: 80%;
+    }
+    .button-quantidade {
+        width: 300px;
     }
 }
 
@@ -764,6 +811,15 @@ div.swiper-button-next, div.swiper-button-prev {
     #swiper-slide-text p {
         font-size: 12px;
     }
+    .container-imgs {
+        display: none;
+    }
+    .container-info-item h2 {
+        font-size: 24px;
+    }
+    .section-item {
+        padding: 2rem 3rem;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -805,6 +861,15 @@ div.swiper-button-next, div.swiper-button-prev {
     #swiper-slide-text p {
         font-size: 12px;
     }
+    .container-imgs {
+        display: none;
+    }
+    .container-info-item h2 {
+        font-size: 24px;
+    }
+    .section-item {
+        padding: 1rem;
+    }
 }
 
 
@@ -841,10 +906,19 @@ div.swiper-button-next, div.swiper-button-prev {
     .section-main {
         padding: 1rem 0;
     }
+    .section-item {
+        padding: 1rem;
+    }
     .swiper-text {
          top: 0;
     }
     #swiper-slide-text p {
         font-size: 12px;
+    }
+    .container-imgs {
+        display: none;
+    }
+    .container-info-item h2 {
+        font-size: 24px;
     }
 }
