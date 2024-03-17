@@ -967,6 +967,10 @@ footer {
     .slideSwiper {
         padding-top: 5rem;
     }
+    #swiper-pagination-slide {
+        top: 420px;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1050,7 +1054,10 @@ footer {
     .slideSwiper {
         padding-top: 5rem;
     }
-
+    #swiper-pagination-slide {
+        top: 420px;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -1125,6 +1132,10 @@ footer {
     }
     .slideSwiper {
         padding-top: 4rem;
+    }
+    #swiper-pagination-slide {
+        top: 420px;
+        position: absolute;
     }
 }
 
@@ -1201,6 +1212,10 @@ footer {
     }
     .slideSwiper {
         padding-top: 4rem;
+    }
+    #swiper-pagination-slide {
+        top: 420px;
+        position: absolute;
     }
 }
 
