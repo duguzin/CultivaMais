@@ -864,6 +864,7 @@ footer {
         padding: 2rem 3rem;
         height: 60px;
         top: 30px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     }
     main {
         padding: 4rem 0;
@@ -933,6 +934,7 @@ footer {
         padding: 2rem 3rem;
         height: 60px;
         top: 30px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     }
     main {
         padding: 4rem 0;
@@ -1005,6 +1007,7 @@ footer {
         padding: 2rem 1rem;
         height: 60px;
         top: 30px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     }
     main {
         padding: 4rem 0;
@@ -1073,6 +1076,7 @@ footer {
         padding: 10px;
         height: 50px;
         top: 30px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
     }
     main {
         padding: 3rem 0;
