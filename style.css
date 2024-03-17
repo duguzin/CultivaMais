@@ -67,9 +67,6 @@ main {
 
 
 
-
-
-
 .nav-text {
     background-color: #004E29;
     width: 100%;
@@ -592,16 +589,17 @@ div.swiper-button-next, div.swiper-button-prev {
 .button-comprar {
     width: 100%;
     height: 50px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 300;
     background-color: #004E29;
     border-radius: 25px;
-    margin-bottom: 20px;
     color: #fff;
-    border: none;
     cursor: pointer;
     letter-spacing: 1px;
     transition: .3s ease;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button-comprar:hover {
