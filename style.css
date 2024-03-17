@@ -774,6 +774,73 @@ div.swiper-button-next, div.swiper-button-prev {
     display: block;
 }
 
+/* FOOTER */
+footer {
+    background-color: #004E29;
+    color: #fff;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* animation: wave 12s infinite;  */
+}
+
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    
+}
+
+.footer-column li {
+    margin: 5px 0;
+}
+
+
+.footer-column a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+    font-weight: 400;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons svg {
+    transition: .3s ease;
+}
+
+.social-icons svg:hover {
+    fill: #ff9900;
+    transform: scale(1.1);
+}
+
+.links-footer a:hover {
+    color: #ff9900;
+}
+
+
+footer {
+    transition: transform 0.3s ease-in-out;
+}
+  
+
 @media (min-width: 1010px) {
     .div-input-cart-nav, .button-menu, .swiper-card-img-item {
         display: none;
@@ -1063,5 +1130,26 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     .container-slide {
         padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+      font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        padding: 2rem;
+    }
+    .footer-column {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .footer-column a {
+        font-size: 14px;
     }
 }
