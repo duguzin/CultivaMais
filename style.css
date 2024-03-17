@@ -29,11 +29,11 @@ main {
 
 .nav-menu {
     width: 100%;
-    height: 30px;
+    height: 40px;
     justify-content: center;
     display: flex;
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     position: fixed;
     top: 80px;
     align-items: center;
@@ -57,9 +57,15 @@ main {
     transition: all .5s;
 }
 
-.nav-menu-mobile li{
-    margin-top: 15px;
+.nav-menu-mobile li {
+    margin-top: 20px;
 }
+
+.nav-menu-mobile li a {
+    font-size: 18px;
+}
+
+
 
 
 
@@ -69,7 +75,7 @@ main {
     width: 100%;
     height: 30px;
     position: fixed;
-    top: 125px;
+    top: 100px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -92,9 +98,9 @@ main {
 
 .nav-links {
     /* color: #929292; */
-    color: #004E29;
+    color: #000;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     border-bottom: 1px solid transparent;
     transition: .3s ease;
@@ -119,20 +125,42 @@ main {
     width: 280px;
 }
 
-/* .input-pesquisa {
-   border: 2px #fff solid; 
-   background: #fff;
+.input-pesquisa-mobile {
+   /* border: 2px #fff solid;*/
+   background: #f7f6f6;
+   width: 100%;
    border-radius: 25px;
-   width: 600px;
-   height: 45px;
-   position: relative;
+   height: 30px;
    display: flex;
-   gap: 5px;
-   padding: 0 15px;
    align-items: center;
-   margin: 0 1rem;
-   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
-} */
+   padding-left: 15px;
+   gap: 10px;
+   /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
+}
+
+.input-pesquisa-mobile svg {
+    fill: #000;
+    height: 0.8em;
+}
+
+.input-pesquisa-mobile input {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.div-input-pesquisa-mobile {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 92px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+}
 
 .input-pesquisa {
     border: 1px solid #004E29;
@@ -146,7 +174,7 @@ main {
     gap: 10px;
 }
 
-.input-pesquisa-mobile  svg {
+/* .input-pesquisa-mobile  svg {
     fill: #004E29;
     height: 1.5em;
 }
@@ -154,7 +182,7 @@ main {
 .input-pesquisa svg {
     fill: #004E29;
     height: 1.3em;
-}
+} */
 
 .input-pesquisa-active {
     width: 120px;
@@ -194,7 +222,7 @@ body.open-input .input-pesquisa-active {
 } */
 
 .svg-carrinho svg, .svg-carrinho-mobile svg {
-    fill: #004E29;
+    fill: #000;
     height: 1.5em;
     cursor: pointer;
 }
@@ -424,7 +452,7 @@ body.open-menu .navbar-overlay-mobile {
     height: 30px;
     width: 100%;
     position: fixed;
-    top: 125px;
+    top: 120px;
     z-index: 2;
 }
 
@@ -682,7 +710,7 @@ div.swiper-button-next, div.swiper-button-prev {
 
 .button-menu svg {
     cursor: pointer;
-    fill: #004E29;
+    fill: #000;
     height: 1.5em;
 }
 
@@ -845,7 +873,7 @@ footer {
   
 
 @media (min-width: 1010px) {
-    .div-input-cart-nav, .button-menu, .swiper-card-img-item {
+    .div-input-cart-nav, .button-menu, .swiper-card-img-item, .div-input-pesquisa-mobile {
         display: none;
     }
     
@@ -865,7 +893,7 @@ footer {
         padding: 2rem 3rem;
         height: 60px;
         top: 30px;
-        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
         padding: 4rem 0;
@@ -935,7 +963,7 @@ footer {
         padding: 2rem 3rem;
         height: 60px;
         top: 30px;
-        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
         padding: 4rem 0;
@@ -1007,8 +1035,8 @@ footer {
     .nav-main {
         padding: 2rem 1rem;
         height: 60px;
-        top: 30px;
-        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+        /* top: 30px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
         padding: 4rem 0;
@@ -1077,7 +1105,7 @@ footer {
         padding: 10px;
         height: 50px;
         top: 30px;
-        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
         padding: 3rem 0;
