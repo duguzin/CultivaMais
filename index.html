@@ -121,6 +121,46 @@
 
     <main>
 
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-slide slideSwiper">
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide" id="swiper-slide">
+            <div class="container-slide">
+     
+              <div class="content-slide">
+                <div class="title-slide">
+                Frete grátis para todo o país
+                </div>
+      
+                <div class="subtitle-slide">Só hoje, frete grátis, faça e aproveite!</div>
+      
+                <a class="link-slide" href="#">VAMOS LÁ</a>
+              </div>
+          </div>
+         </div>
+          <div class="swiper-slide" id="swiper-slide">
+            <div class="container-slide">
+              
+              <div class="content-slide">
+                <div class="title-slide">
+                  REGADOR AUTOMÁTICO INTEGRADO COM ARDUINO
+                </div>
+      
+                <div class="subtitle-slide">Compre o seu regador automático e otimize sua colheita!</div>
+      
+                <a class="link-slide" href="#">COMPRE AGORA</a>
+              </div>
+          </div>
+         </div>
+         
+          </div>
+          <!-- <div class="swiper-button-next" style="color: #000;"></div>
+          <div class="swiper-button-prev" style="color: #000;"></div> -->
+      
+          <div class="swiper-pagination" id="swiper-pagination-slide"></div>
+        </div>
+      
+      </div>
       
       <!-- <div class="img-header">
         <div class="container-text-slide">
@@ -427,7 +467,31 @@
 
   var swiper = new Swiper(".textSwiper", {
         autoplay: {
-        delay: 3000,
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      speed: 600,
+      parallax: true,
+      direction: 'horizontal',
+      loop: true,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      //   centeredSlides: true,
+
+      // },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+    });
+
+    var swiper = new Swiper(".slideSwiper", {
+        autoplay: {
+        delay: 10000,
         disableOnInteraction: false,
       },
       keyboard: {
@@ -441,7 +505,6 @@
         el: ".swiper-pagination",
         clickable: true,
         centeredSlides: true,
-
       },
       navigation: {
         nextEl: ".swiper-button-next",
