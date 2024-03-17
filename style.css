@@ -768,7 +768,7 @@ div.swiper-button-next, div.swiper-button-prev {
 
 @media screen and (max-width: 420px) {
     .nav-main {
-        padding: 10px;
+        padding: 2rem 1rem;
         height: 60px;
         top: 30px;
     }
