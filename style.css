@@ -12,7 +12,7 @@
 
 main {
     background-color: #fff;
-    padding-top: 9rem;
+    padding-top: 8rem;
 }
 
 .nav-main {
@@ -98,7 +98,7 @@ main {
 
 .nav-links {
     /* color: #929292; */
-    color: #000;
+    color: #004E29;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
@@ -139,7 +139,7 @@ main {
 }
 
 .input-pesquisa-mobile svg {
-    fill: #000;
+    fill: #004E29;
     height: 0.8em;
 }
 
@@ -152,7 +152,7 @@ main {
 .div-input-pesquisa-mobile {
     background-color: #fff;
     width: 100%;
-    height: 60px;
+    height: 65px;
     position: absolute;
     top: 92px;
     gap: 5px;
@@ -171,18 +171,18 @@ main {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 /* .input-pesquisa-mobile  svg {
     fill: #004E29;
     height: 1.5em;
-}
+}*/
 
 .input-pesquisa svg {
     fill: #004E29;
     height: 1.3em;
-} */
+} 
 
 .input-pesquisa-active {
     width: 120px;
@@ -210,7 +210,8 @@ body.open-input .input-pesquisa-active {
     font-weight: 400;
 }
 
-.input-pesquisa input:focus{
+.input-pesquisa-mobile input:focus, 
+.input-pesquisa input:focus {
     outline: none;
 }
 /* 
@@ -222,7 +223,7 @@ body.open-input .input-pesquisa-active {
 } */
 
 .svg-carrinho svg, .svg-carrinho-mobile svg {
-    fill: #000;
+    fill: #004E29;
     height: 1.5em;
     cursor: pointer;
 }
@@ -710,7 +711,7 @@ div.swiper-button-next, div.swiper-button-prev {
 
 .button-menu svg {
     cursor: pointer;
-    fill: #000;
+    fill: #004E29;
     height: 1.5em;
 }
 
@@ -956,6 +957,16 @@ footer {
     .container-info-item p {
         margin-top: 20px;
     }
+    .div-input-pesquisa-mobile {
+        padding: 0 3rem;
+    }
+    .div-input-pesquisa-mobile {
+        top: 80px;
+        padding: 3rem;
+    }
+    .slideSwiper {
+        padding-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1029,6 +1040,17 @@ footer {
     .container-slide {
         padding: 3rem;
     }
+    .div-input-pesquisa-mobile {
+        padding: 0 3rem;
+    }
+    .div-input-pesquisa-mobile {
+        top: 80px;
+        padding: 3rem;
+    }
+    .slideSwiper {
+        padding-top: 5rem;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -1096,6 +1118,13 @@ footer {
     }
     .container-slide {
         padding: 3rem 1rem;
+    }
+    .div-input-pesquisa-mobile {
+        top: 80px;
+        padding: 1rem;
+    }
+    .slideSwiper {
+        padding-top: 4rem;
     }
 }
 
@@ -1165,6 +1194,13 @@ footer {
     }
     .container-slide {
         padding: 3rem 1rem;
+    }
+    .div-input-pesquisa-mobile {
+        top: 80px;
+        padding: 10px;
+    }
+    .slideSwiper {
+        padding-top: 4rem;
     }
 }
 
