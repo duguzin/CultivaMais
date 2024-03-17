@@ -765,6 +765,13 @@ div.swiper-button-next, div.swiper-button-prev {
     .button-quantidade {
         width: 300px;
     }
+    .container-info-item {
+        padding: 0;
+        width: 100%;
+    }
+    .container-info-item p {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -820,6 +827,13 @@ div.swiper-button-next, div.swiper-button-prev {
     .section-item {
         padding: 2rem 3rem;
     }
+    .container-info-item {
+        padding: 0;
+        width: 100%;
+    }
+    .container-info-item p {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -869,6 +883,13 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     .section-item {
         padding: 1rem;
+    }
+    .container-info-item {
+        padding: 1rem;
+        width: 100%;
+    }
+    .container-info-item p {
+        margin-top: 20px;
     }
 }
 
@@ -920,5 +941,12 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     .container-info-item h2 {
         font-size: 24px;
+    }
+    .container-info-item {
+        padding: 0;
+        width: 100%;
+    }
+    .container-info-item p {
+        margin-top: 20px;
     }
 }
