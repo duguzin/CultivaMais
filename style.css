@@ -51,7 +51,7 @@ main {
     width: 320px;
     height: 100%;
     padding: 2rem 0;
-    padding-left: 1rem;
+    padding: 2rem;
     background: #fff;
     visibility: hidden;
     transition: all .5s;
@@ -90,12 +90,15 @@ main {
 
 .nav-list {
     list-style-type: none;
-
+    background-color: #004E29;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .nav-links {
     /* color: #929292; */
-    color: #004E29;
+    color: #fff;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
@@ -731,6 +734,7 @@ div.swiper-button-next, div.swiper-button-prev {
     height: 500px;
     overflow: hidden;
 }
+
 
 
 .swiper-slide .image-slide {

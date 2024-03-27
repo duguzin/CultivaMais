@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
@@ -120,21 +121,11 @@ body {
     color: #372f3f;
 }
 
-#i-location {
+#i-location, #i-search {
     color: #004AAD;
     font-size: 20px;
 }
 
-#i-search {
-    background-color: #004AAD;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#i-search {
-    color: #fff;
-    font-size: 18px;
-}
 
 #i-location {
     margin-right: 5px;
@@ -184,7 +175,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 4px 10px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -192,7 +183,7 @@ body {
 }
 
 #other_infos .info h2 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -220,8 +211,14 @@ body {
 
 #alert {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    /* background-color: #004AAD; */
+    /* width: 100%;
+    height: 40px; */
+    color: #004AAD;
+    /* padding: 1rem;
+    border-radius: 10px; */
+    margin-top: 20px;
 }
 
 #alert img {
@@ -244,8 +241,49 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
 }
+.button-menu {
+    display: block;
+}
+
+.button-menu svg {
+    fill: #004AAD;
+}
+
+.nav-menu-mobile {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 320px;
+    height: 100%;
+    padding: 2rem;
+    background: #fff;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.nav-links {
+    /* color: #929292; */
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s ease;
+}
+
+.nav-list {
+    background-color: #004AAD;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 600px) {
     body {
+        padding: 1rem;
+    }
+    .nav-painel {
         padding: 1rem;
     }
 }
@@ -261,7 +299,18 @@ body {
 <body>
 
     <nav class="nav-painel">
+        <div class="navbar-overlay-mobile" onclick="toggleMenuOpen()"></div>
         <a href="./index.html" class="logo-painel"><img src="./logo-painel.png" alt=""></a>
+
+        <div class="button-menu" onclick="toggleMenuOpen()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+
+    <nav class="nav-menu-mobile">
+        <li class="nav-list"><a href="./index.html" class="nav-links">Início</a></li>
+        <li class="nav-list"><a href="#" class="nav-links">Meus Produtos</a></li>
+        <li class="nav-list"><a href="#" class="nav-links">Catálogo</a></li>
     </nav>
 
     <section class="section-painel">
@@ -349,7 +398,7 @@ body {
 
     
     
-    <script>
+    <script src="script.js">
         document.querySelector('#search').addEventListener('submit', async (event) => {
     event.preventDefault();
 
