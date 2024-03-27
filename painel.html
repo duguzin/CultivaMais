@@ -257,7 +257,7 @@ body {
     translate: -100% 0;
     width: 320px;
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 1rem;
     background: #fff;
     visibility: hidden;
     transition: all .5s;
@@ -278,6 +278,36 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
+.container-historico {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.historico {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.historico p, .historico i {
+    color: #004AAD;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
 
 @media screen and (max-width: 600px) {
     body {
@@ -394,6 +424,33 @@ body {
                         </div>
                     </div>
                 </div>
+
+                <div class="container-historico">
+                    <div class="historico">
+                        <p>11:30AM</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+
+                    <div class="historico">
+                        <p>14:30PM</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+
+                    <div class="historico">
+                        <p>18:30PM</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+
+                    <div class="historico">
+                        <p>5:30AM</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+
+                    <div class="historico">
+                        <p>9:30AM</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                </div>
     </section>
 
     
@@ -401,7 +458,7 @@ body {
     <script>
         const toggleMenuOpen = () => document.body.classList.toggle("open-menu");
 
-        
+
         document.querySelector('#search').addEventListener('submit', async (event) => {
     event.preventDefault();
 
