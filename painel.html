@@ -398,7 +398,10 @@ body {
 
     
     
-    <script src="script.js">
+    <script>
+        const toggleMenuOpen = () => document.body.classList.toggle("open-menu");
+
+        
         document.querySelector('#search').addEventListener('submit', async (event) => {
     event.preventDefault();
 
