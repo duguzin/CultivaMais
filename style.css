@@ -133,7 +133,7 @@ main {
    /* border: 2px #fff solid;*/
    background: #f7f6f6;
    width: 100%;
-   border-radius: 3px;
+   border-radius: 25px;
    height: 40px;
    display: flex;
    align-items: center;
@@ -171,7 +171,7 @@ main {
     padding: 0 16px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 3px;
+    border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -244,7 +244,7 @@ body.open-input .input-pesquisa-active {
     padding: 0 16px;
     padding-top: 8px;
     padding-bottom: 4px;
-    border-radius: 3px;
+    border-radius: 25px;
     cursor: pointer;
     display: flex;
     text-decoration: none;
@@ -443,7 +443,7 @@ body.open-input .navbar-overlay-input {
     height: 40px;
     cursor: pointer;
     /* background-color: #ff9900; */
-    border-radius: 3px;
+    border-radius: 25px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -604,7 +604,7 @@ div.swiper-button-next, div.swiper-button-prev {
     height: 50px;
     font-size: 14px;
     border: 1px solid #676767;
-    border-radius: 3px;
+    border-radius: 25px;
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -627,7 +627,7 @@ div.swiper-button-next, div.swiper-button-prev {
     font-size: 16px;
     font-weight: 300;
     background-color: #004E29;
-    border-radius: 3px;
+    border-radius: 25px;
     color: #fff;
     cursor: pointer;
     letter-spacing: 1px;
@@ -774,16 +774,28 @@ div.swiper-button-next, div.swiper-button-prev {
     background-color: #006837;
     width: 100%;
     height: 400px;
+    background-image: url(https://blog.plantei.com.br/wp-content/uploads/2016/05/plantar-melancia.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .container-slide {
-    padding: 4rem 6rem;
+    padding: 4rem;
     color: #fff;
     z-index: 2;
     position: relative;
     display: flex;
     gap: 4rem;
 }
+
+.overlay-slide {
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 2;
+}
+
 
 .title-slide {
     font-size: 32px;
@@ -800,7 +812,7 @@ div.swiper-button-next, div.swiper-button-prev {
 
 .link-slide {
     text-decoration: none;
-    color: #e28f13;
+    color: #004E29;
     padding: 15px 45px;
     background-color: #fff;
     border-radius: 3px;
@@ -848,7 +860,7 @@ div.swiper-button-next, div.swiper-button-prev {
     margin: auto;
     background-color: #fff;
     border: 1px solid #e5e5e5;
-    border-radius: 3px;
+    border-radius: 25px;
     filter: drop-shadow(0px 1px 0px #efefef)
       drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
       justify-content: space-around;
@@ -1089,7 +1101,7 @@ footer {
 
 @media screen and (max-width: 700px) {
     .nav-main {
-        padding: 2rem 3rem;
+        padding: 2rem;
         height: 60px;
         top: 30px;
         /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
@@ -1139,7 +1151,7 @@ footer {
         font-size: 24px;
     }
     .section-item {
-        padding: 2rem 3rem;
+        padding: 2rem;
     }
     .container-info-item {
         padding: 0;
@@ -1156,14 +1168,14 @@ footer {
         margin-bottom: 100px;
     }
     .container-slide {
-        padding: 3rem;
+        padding: 2rem;
     }
     .div-input-pesquisa-mobile {
         padding: 0 3rem;
     }
     .div-input-pesquisa-mobile {
         top: 80px;
-        padding: 3rem;
+        padding: 2rem;
     }
     .slideSwiper {
         padding-top: 5rem;
@@ -1228,7 +1240,7 @@ footer {
         padding: 1rem;
     }
     .container-info-item {
-        padding: 1rem;
+        /* padding: 1rem; */
         width: 100%;
     }
     .container-info-item p {
