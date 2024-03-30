@@ -1000,9 +1000,6 @@ footer {
     .link-perfil, .div-fantasma, .menu-painel-left {
         display: none;
     }
-    .section-add-product {
-        padding-top: 8rem;
-    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -1125,6 +1122,9 @@ footer {
         top: 420px;
         position: absolute;
     }
+    .section-add-product {
+        padding-top: 8rem;
+    }
     
 }
 
@@ -1217,7 +1217,7 @@ footer {
         padding: 2rem 1rem;
     }
     .section-add-product {
-        padding-top: 5rem;
+        padding-top: 6rem;
     }
 }
 
@@ -1304,6 +1304,10 @@ footer {
     }
     footer {
         padding: 2rem 1rem;
+    }
+    .form-header h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
     }
 }
 
