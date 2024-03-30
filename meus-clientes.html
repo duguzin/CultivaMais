@@ -1,3 +1,4 @@
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +25,7 @@
         .section-add-product {
             padding-top: 1rem;
             display: flex;
-            gap: 2rem;
+            /* gap: 2rem; */
         }
     
         .menu-painel-left {
@@ -260,66 +261,60 @@
     <main>
         <section class="section-add-product">
             <div class="menu-painel-left">
-                <li><a href="./add-product.html">Adicionar produtos</a></li>
-                <li id="active"><a href="#">Meus produtos</a></li>
+                <li><a href="./add-product.html">Add. produtos</a></li>
+                <li><a href="./meus-produtos.html">Meus produtos</a></li>
                 <li><a href="#">Minha Loja</a></li>
-                <li><a href="#">Meus Clientes</a></li>
+                <li id="active"><a href="#">Meus Clientes</a></li>
             </div>
 
             <div class="container-table">
-                <div class="table-header">
-                  Painel de Gerenciamento de Produtos
-                </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Imagem</th>
-                      <th>Nome</th>
-                      <th>Preço</th>
-                      <th>Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
-                      <td data-label="Nome">Produto 1</td>
-                      <td data-label="Preço">R$ 99,99</td>
-                      <td data-label="Ações">
-                        <i class="fas fa-edit edit-icon"></i>
-                        <i class="fas fa-trash delete-icon"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
-                      <td data-label="Nome">Produto 1</td>
-                      <td data-label="Preço">R$ 99,99</td>
-                      <td data-label="Ações">
-                        <i class="fas fa-edit edit-icon"></i>
-                        <i class="fas fa-trash delete-icon"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
-                      <td data-label="Nome">Produto 1</td>
-                      <td data-label="Preço">R$ 99,99</td>
-                      <td data-label="Ações">
-                        <i class="fas fa-edit edit-icon"></i>
-                        <i class="fas fa-trash delete-icon"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
-                      <td data-label="Nome">Produto 1</td>
-                      <td data-label="Preço">R$ 99,99</td>
-                      <td data-label="Ações">
-                        <i class="fas fa-edit edit-icon"></i>
-                        <i class="fas fa-trash delete-icon"></i>
-                      </td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
-              </div>
+                    <div class="table-header">
+                      Tabela de Clientes
+                    </div>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Produto Escolhido</th>
+                          <th>Quantidade</th>
+                          <th>Preço</th>
+                          <th>CPF</th>
+                          <th>Email</th>
+                          <th>Endereço</th>
+                          <th>Telefone</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Produto Escolhido">Nome do Produto</td>
+                          <td data-label="Quantidade">2</td>
+                          <td data-label="Preço">R$ 200,00</td>
+                          <td data-label="CPF">123.456.789-00</td>
+                          <td data-label="Email">cliente@exemplo.com</td>
+                          <td data-label="Endereço">Rua Exemplo, 123, Cidade, Estado</td>
+                          <td data-label="Telefone">(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Produto Escolhido">Nome do Produto</td>
+                          <td data-label="Quantidade">2</td>
+                          <td data-label="Preço">R$ 200,00</td>
+                          <td data-label="CPF">123.456.789-00</td>
+                          <td data-label="Email">cliente@exemplo.com</td>
+                          <td data-label="Endereço">Rua Exemplo, 123, Cidade, Estado</td>
+                          <td data-label="Telefone">(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Produto Escolhido">Nome do Produto</td>
+                          <td data-label="Quantidade">2</td>
+                          <td data-label="Preço">R$ 200,00</td>
+                          <td data-label="CPF">123.456.789-00</td>
+                          <td data-label="Email">cliente@exemplo.com</td>
+                          <td data-label="Endereço">Rua Exemplo, 123, Cidade, Estado</td>
+                          <td data-label="Telefone">(11) 98765-4321</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
             
         </section>
     </main>
