@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>CultivaMais</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -18,73 +19,7 @@
         body {
             background-color: #f0f2f5;           
         }
-        .form-container {
-            background: #fff;
-            padding: 2rem;
-            /* border-radius: 10px; */
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            width: 100%;
-        }
-        .form-header {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .form-header h2 {
-            font-size: 22px;
-            font-weight: 500;
-            color: #676767;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #676767;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box; /* Added */
-        }
-        .form-group input[type="file"] {
-            border: none;
-            padding: 0;
-        }
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #004E29;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .form-group button:hover {
-            background-color: #004E29;
-        }
-        .form-group i {
-            margin-right: 5px;
-        }
         
-        .nav-add-product {
-            background-color: #004E29;
-            width: 100%;
-            height: 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-            padding: 2rem;
-        }
-    
     
         .section-add-product {
             padding-top: 1rem;
@@ -117,7 +52,6 @@
             font-size: 16px;
         }
     
-    
         .link-perfil {
             background-color: #fff;
             border-radius: 50%;
@@ -126,6 +60,86 @@
         
         .link-perfil svg {
             fill: #004E29;
+        }
+
+
+        .container-table {
+            width: 100%;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            /* overflow: hidden; */
+        }
+        .table-header {
+            background-color: #046136;
+            color: white;
+            font-size: 20px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #097945;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+        .product-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+        .action-icons {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .edit-icon {
+            color: #f6b93b;
+            margin-right: 20px;
+        }
+        .delete-icon {
+            color: #e55039;
+        }
+
+        @media screen and (max-width: 768px) {
+            th, td {
+            display: block;
+            text-align: right;
+            }
+            th {
+            display: none;
+            }
+            td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+            }
+            td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: bold;
+            text-align: left;
+            }
+            .product-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            }
         }
     
         
@@ -159,6 +173,7 @@
             padding: 1rem;
           }
         }
+
     </style>
 </head>
 <body>
@@ -245,38 +260,67 @@
     <main>
         <section class="section-add-product">
             <div class="menu-painel-left">
-                <li id="active"><a href="#">Adicionar produtos</a></li>
-                <li><a href="./meus-produtos.html">Meus produtos</a></li>
+                <li><a href="./add-product.html">Adicionar produtos</a></li>
+                <li id="active"><a href="#">Meus produtos</a></li>
                 <li><a href="#">Minha Loja</a></li>
                 <li><a href="#">Meus Clientes</a></li>
             </div>
 
-            <div class="form-container">
-                <div class="form-header">
-                    <h2><i class="fas fa-plus-square"></i> Adicionar Novo Produto</h2>
+            <div class="container-table">
+                <div class="table-header">
+                  Painel de Gerenciamento de Produtos
                 </div>
-                <form>
-                    <div class="form-group">
-                        <label for="productName">Nome do Produto</label>
-                        <input type="text" id="productName" name="productName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="productDescription">Descrição</label>
-                        <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="productPrice">Preço</label>
-                        <input type="number" id="productPrice" name="productPrice" step="0.01" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="productPhotos">Fotos do Produto</label>
-                        <input type="file" id="productPhotos" name="productPhotos" multiple>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit"><i class="fas fa-cloud-upload-alt"></i>Adicionar Produto</button>
-                    </div>
-                </form>
-            </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Imagem</th>
+                      <th>Nome</th>
+                      <th>Preço</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
+                      <td data-label="Nome">Produto 1</td>
+                      <td data-label="Preço">R$ 99,99</td>
+                      <td data-label="Ações">
+                        <i class="fas fa-edit edit-icon"></i>
+                        <i class="fas fa-trash delete-icon"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
+                      <td data-label="Nome">Produto 1</td>
+                      <td data-label="Preço">R$ 99,99</td>
+                      <td data-label="Ações">
+                        <i class="fas fa-edit edit-icon"></i>
+                        <i class="fas fa-trash delete-icon"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
+                      <td data-label="Nome">Produto 1</td>
+                      <td data-label="Preço">R$ 99,99</td>
+                      <td data-label="Ações">
+                        <i class="fas fa-edit edit-icon"></i>
+                        <i class="fas fa-trash delete-icon"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Imagem"><img src="https://s2-ge.glbimg.com/BRPoZyCmhgXOS42hVatrweAwLiQ=/0x0:620x455/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/u/n/ppIYgoT2GGK0y2xyvbSg/manga.jpeg" alt="Produto" class="product-img"></td>
+                      <td data-label="Nome">Produto 1</td>
+                      <td data-label="Preço">R$ 99,99</td>
+                      <td data-label="Ações">
+                        <i class="fas fa-edit edit-icon"></i>
+                        <i class="fas fa-trash delete-icon"></i>
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            
         </section>
     </main>
     

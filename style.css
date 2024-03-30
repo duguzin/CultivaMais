@@ -976,6 +976,10 @@ footer {
 footer {
     transition: transform 0.3s ease-in-out;
 }
+
+#active {
+    border: 2px solid #004E29;
+}
   
 
 @media (min-width: 1010px) {
