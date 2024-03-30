@@ -997,8 +997,11 @@ footer {
     .nav-links {
         color: #fff;
     }
-    .link-perfil, .div-fantasma {
+    .link-perfil, .div-fantasma, .menu-painel-left {
         display: none;
+    }
+    .section-add-product {
+        padding-top: 8rem;
     }
 }
 
@@ -1212,6 +1215,9 @@ footer {
     }
     footer {
         padding: 2rem 1rem;
+    }
+    .section-add-product {
+        padding-top: 5rem;
     }
 }
 
