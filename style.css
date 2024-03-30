@@ -1019,7 +1019,7 @@ footer {
         /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
-        padding: 4rem 0;
+        padding-top: 4rem;
     }
     .logo img {
        width: 180px;
@@ -1108,7 +1108,7 @@ footer {
         /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
-        padding: 4rem 0;
+        padding-top: 4rem;
     }
     .logo img {
        width: 160px;
@@ -1198,7 +1198,7 @@ footer {
         box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
-        padding: 4rem 0;
+        padding-top: 4rem;
     }
     .logo img {
         width: 150px;
@@ -1285,7 +1285,7 @@ footer {
         /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1); */
     }
     main {
-        padding: 3rem 0;
+        padding-top: 3rem;
     }
     .logo img {
         width: 120px;
