@@ -25,13 +25,15 @@
 
         .container-main-login {
             width: 100%;
-            height: 400px;
+            height: 380px;
             background-color: #fff;
             display: flex;
             padding: 2rem 3rem;
             border-radius: 5px;
             gap: 2rem;
+            margin: 0 auto;
         }
+        
 
         .container-login-left {
             width: 50%;
@@ -41,14 +43,14 @@
         .container-login-left h1 {
             color: #000;
             /* color: #004E29; */
-            font-size: 34px;
+            font-size: 38px;
             font-weight: 500;
             margin-top: 20px;
         }
     
         .container-login-left h2 {
             color: #676767;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 400;
             margin-top: 20px;
         }
@@ -62,7 +64,7 @@
             width: 150px;
         }
 
-        #input-login {
+        #input-senha {
             width: 100%;
             height: 60px;
             font-size: 16px;
@@ -73,7 +75,19 @@
             outline: none;
         }
 
-        #input-login:focus {
+        .div-mostrar-senha {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .div-mostrar-senha label {
+            font-size: 14px;
+            font-size: 500;
+        }
+
+
+        #input-senha:focus {
             border: 2px solid #004E29;
         }
 
@@ -82,30 +96,25 @@
             align-items: center;
             gap: 20px;
             justify-content: end;
-            margin-top: 150px;
+            margin-top: 100px;
         }
 
-        .a-criar-conta {
+        .a-esqueceu-senha {
             text-decoration: none;
             color: #004E29;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
         }
 
-        .button-avançar {
+        .button-entrar {
             background-color: #004E29;
             color: #fff;
             border-radius: 25px;
             border: none;
             font-size: 16px;
-            width: 40%;
+            width: 100px;
             height: 40px;
             cursor: pointer;
-        }
-
-        .button-avançar a {
-            text-decoration: none;
-            color: #fff;
         }
 
         .linha {
@@ -124,7 +133,7 @@
 
         }
 
-        @media screen and (max-width: 660px) {
+        @media screen and (max-width: 670px) {
             body {
                 background-color: #eee;
             }
@@ -157,6 +166,7 @@
             .container-main-login {
                 flex-wrap: wrap;
                 height: auto;
+                padding: 2rem;
             }
             .container-login-left, .form-container {
                 width: 100%;
@@ -168,8 +178,12 @@
                 justify-content: space-between;
                
             }
+            .a-esqueceu-senha {
+                font-size: 14px;
+            }
 
         }
+
 
     </style>
 </head>
@@ -178,19 +192,25 @@
         <div class="container-main-login">
             <div class="container-login-left">
               <a href="./index.html" class="logo-login"><img src="./logo.png" alt=""></a>
-              <h1>Fazer Login</h1>
-              <h2>Entre na sua Conta</h2>
+              <h1>Olá!</h1>
+              <h2>Gustavo</h2>
             </div>
 
             <!-- <div class="linha"></div> -->
 
             <div class="form-container">
                 <form action="">
-                    <input type="text" placeholder="E-mail ou Telefone" id="input-login">
+                    <input type="password" placeholder="Digite sua Senha" id="input-senha">
+
+                    <div class="div-mostrar-senha">
+                      <input type="checkbox" id="mostrar-senha">
+                      <label for="">Mostrar senha</label>  
+                    </div>
+                    
 
                     <div class="buttons-login">
-                        <a href="#" class="a-criar-conta">Criar conta</a>
-                        <button class="button-avançar"><a href="./login-senha.html">Avançar</a></button>
+                        <a href="#" class="a-esqueceu-senha">Esqueceu sua Senha?</a>
+                        <button class="button-entrar">Entrar</button>
                     </div>
                 </form>
             </div>
