@@ -1122,9 +1122,6 @@ footer {
         top: 420px;
         position: absolute;
     }
-    .section-add-product {
-        padding-top: 8rem;
-    }
     
 }
 
@@ -1216,9 +1213,6 @@ footer {
     footer {
         padding: 2rem 1rem;
     }
-    .section-add-product {
-        padding-top: 6rem;
-    }
 }
 
 @media screen and (max-width: 420px) {
@@ -1304,10 +1298,6 @@ footer {
     }
     footer {
         padding: 2rem 1rem;
-    }
-    .form-header h2 {
-        margin-bottom: 20px;
-        font-size: 20px;
     }
 }
 
